@@ -11,13 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return 'hi';
-});
+
 Route::get('login', '\App\Http\Controllers\Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', '\App\Http\Controllers\Auth\LoginController@login');
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/','\App\Modules\User\Controllers\UserController@home');
+Route::get('/home','\App\Modules\User\Controllers\UserController@dashboard');
 Route::get('/dashboard','\App\Modules\User\Controllers\UserController@dashboard');
