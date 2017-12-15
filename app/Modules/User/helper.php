@@ -43,7 +43,7 @@ function get_active_menu_items()
             $active_menu_items = ['main_menu' => 2, 'sub_menu' => 23];
             break;
 
-        case 'event':
+        case 'blood':
             $active_menu_items = ['main_menu' => 3, 'sub_menu' => 31];
             break;
 

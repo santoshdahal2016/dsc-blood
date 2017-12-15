@@ -19,6 +19,8 @@ return array(
     'App\\Http\\Middleware\\TrimStrings' => $baseDir . '/app/Http/Middleware/TrimStrings.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+    'App\\Modules\\Blood\\Controllers\\BloodController' => $baseDir . '/app/Modules/Blood/Controllers/BloodController.php',
+    'App\\Modules\\Blood\\Models\\Blood' => $baseDir . '/app/Modules/Blood/Models/Blood.php',
     'App\\Modules\\User\\Controllers\\AuthController' => $baseDir . '/app/Modules/User/Controllers/AuthController.php',
     'App\\Modules\\User\\Controllers\\PermissionController' => $baseDir . '/app/Modules/User/Controllers/PermissionController.php',
     'App\\Modules\\User\\Controllers\\RoleController' => $baseDir . '/app/Modules/User/Controllers/RoleController.php',

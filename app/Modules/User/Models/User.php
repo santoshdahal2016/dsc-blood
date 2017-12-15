@@ -41,28 +41,6 @@ class User extends Model implements AuthenticatableContract,
      */
     protected $hidden = ['password', 'remember_token'];
 
-    public function event()
-    {
-        return $this->hasMany('App\Modules\Event\Models\Event', 'user_id');
-    }
-
-    public function question()
-    {
-        return $this->hasManyThrough('App\Modules\Question\Models\Question', 'App\Modules\Event\Models\Event', 'user_id', 'event_id', '');
-
-    }
-
-    public function lottery_entry()
-    {
-        return $this->hasManyThrough('App\Modules\Lottery\Models\Lottery', 'App\Modules\Event\Models\Event', 'user_id', 'event_id', '');
-
-    }
-
-    public function prize()
-    {
-        return $this->hasManyThrough('App\Modules\Prize\Models\Prize', 'App\Modules\Event\Models\Event', 'user_id', 'event_id', '');
-
-    }
 
     public function role()
     {
@@ -70,24 +48,9 @@ class User extends Model implements AuthenticatableContract,
 
     }
 
-    public function sms_credential()
+    public function blood()
     {
-        return $this->hasOne('App\Modules\Sms\Models\Sms_credentials');
-    }
-
-    public function sms_record()
-    {
-        return $this->hasOne('App\Modules\Sms\Models\Sms_records');
-    }
-
-    public function email_credential()
-    {
-        return $this->hasOne('App\Modules\Email\Models\Email_credentials');
-    }
-
-    public function email_record()
-    {
-        return $this->hasOne('App\Modules\Email\Models\Email_records');
+        return $this->hasOne('App\Modules\Blood\Models\Blood', 'phone');
     }
 
 

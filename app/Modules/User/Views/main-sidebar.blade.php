@@ -53,6 +53,20 @@
                         </ul>
                     </li>
                     @endability
+                    @ability('admin','blood_index')
+                    <li class="{{ (($menus['main_menu'] == 3)?'active' :'') }} ">
+                        <a href="javascript:void(0);" class=" menu-toggle">
+                            <i class="material-icons">add_location</i><span>Blood</span>
+
+                        </a>
+                        <ul class="ml-menu">
+                            @ability('admin', 'blood_index')
+                            <li class="{{ (($menus['sub_menu'] == 31)?'active' :'') }}">
+                                <a href="{{ url('/blood') }}"> Blood</a></li>
+                            @endability
+                        </ul>
+                    </li>
+                    @endability
 
 
             </ul>
