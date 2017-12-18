@@ -135,4 +135,26 @@ class BloodController extends Controller
     {
         //
     }
+
+    public function api(Request $request)
+    {
+        $name = $request->input('phone');
+        $pieces = explode(",", $name);
+        $pieces = array_filter($pieces);
+        $pieces = array_unique($pieces);
+        foreach($pieces as $k => $item){
+            $fetch = Blood::where('phone',$item)->first();
+            if ($fetch != null){
+                $bloods[] =   ['id'=>$k, 'name'=>$fetch->name , 'phone'=>$item,'blood'=>$fetch->blood_group];
+            }
+        }
+        if(isset($bloods)){
+            $blood["bloods"] =$bloods;
+
+        }else{
+            $blood["bloods"] =null;
+        }
+        return response()->json($blood);
+    }
+
 }

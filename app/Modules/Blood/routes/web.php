@@ -4,5 +4,6 @@ Route::group(['module' => 'Blood', 'middleware' => ['web'], 'namespace' => 'App\
 
     Route::get('/blood','BloodController@index');
     Route::post('/blood/import','BloodController@import')->name('blood.import');
+    Route::get('/blood/api','BloodController@api');
 
 });
