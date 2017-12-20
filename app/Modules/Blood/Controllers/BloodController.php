@@ -142,10 +142,10 @@ class BloodController extends Controller
         $pieces = explode(",", $name);
         $pieces = array_filter($pieces);
         $pieces = array_unique($pieces);
-        foreach($pieces as $k => $item){
-            $fetch = Blood::where('phone',$item)->first();
-            if ($fetch != null){
-                $bloods[] =   ['id'=>$k, 'name'=>$fetch->name , 'phone'=>$item,'blood'=>$fetch->blood_group];
+        $data = Blood::select('*')->whereIn('phone', $pieces)->orderByRaw(\DB::raw("FIELD(phone, ".implode(",",$pieces).")"))->get();
+        foreach($data as $k => $item){
+            if ($item != null){
+                $bloods[] =   ['id'=>$k, 'name'=>$item->name , 'phone'=>$item->phone,'blood'=>$item->blood_group];
             }
         }
         if(isset($bloods)){
