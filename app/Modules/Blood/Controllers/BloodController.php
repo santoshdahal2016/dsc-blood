@@ -145,7 +145,7 @@ class BloodController extends Controller
         $data = Blood::select('*')->whereIn('phone', $pieces)->orderByRaw(\DB::raw("FIELD(phone, ".implode(",",$pieces).")"))->get();
         foreach($data as $k => $item){
             if ($item != null){
-                $bloods[] =   ['id'=>$k, 'name'=>$item->name , 'phone'=>$item->phone,'blood'=>$item->blood_group];
+                $bloods[] =   ['id'=>$item->id, 'name'=>$item->name , 'phone'=>$item->phone,'blood'=>$item->blood_group];
             }
         }
         if(isset($bloods)){
