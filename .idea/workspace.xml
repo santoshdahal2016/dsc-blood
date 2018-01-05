@@ -2,9 +2,195 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="973ac591-baf6-4fa5-979b-325530daa24a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Modules/Apisettings/Controllers/ApisettingsController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Modules/Apisettings/Models/Apisettings.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Modules/Apisettings/Models/Passport.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Modules/Apisettings/Views/apisettings/index.blade.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Modules/Apisettings/Views/apisettings/partials/passwordclient.blade.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Modules/Apisettings/Views/index.blade.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Modules/Apisettings/helper.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Modules/Apisettings/routes/api.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Modules/Apisettings/routes/web.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
-      <change beforePath="$PROJECT_DIR$/demo.csv" afterPath="$PROJECT_DIR$/demo.csv" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/User/Models/User.php" afterPath="$PROJECT_DIR$/app/Modules/User/Models/User.php" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/User/Views/main-sidebar.blade.php" afterPath="$PROJECT_DIR$/app/Modules/User/Views/main-sidebar.blade.php" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
+      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" afterPath="$PROJECT_DIR$/config/auth.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Application.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Application.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Command.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Command.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Parser.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Parser.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CommandBuilder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CommandBuilder.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Schedule.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Schedule.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/SqlServerConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/SqlServerConnector.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Events/QueryExecuted.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Events/QueryExecuted.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/MigrationCreator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/MigrationCreator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/MySqlGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/MySqlGrammar.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemAdapter.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemAdapter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ListenerMakeCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ListenerMakeCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/PresetCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/PresetCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ServeCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ServeCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/TestMakeCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/TestMakeCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Resources/CollectsResources.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Resources/CollectsResources.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/AnonymousNotifiable.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/AnonymousNotifiable.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/Messages/SimpleMessage.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/Messages/SimpleMessage.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Listener.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Listener.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/RouteUrlGenerator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/RouteUrlGenerator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/SessionManager.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/SessionManager.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Composer.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Composer.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Notification.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Notification.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Optional.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Optional.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Pluralizer.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Pluralizer.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/NotificationFake.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/NotificationFake.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Concerns/FormatsMessages.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Concerns/FormatsMessages.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/ValidationRuleParser.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/ValidationRuleParser.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/tinker/README.md" afterPath="$PROJECT_DIR$/vendor/laravel/tinker/README.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/tinker/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/tinker/composer.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Lexer.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Lexer.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeAbstract.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeAbstract.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/.github/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/.github/CONTRIBUTING.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/.github/ISSUE_TEMPLATE.md" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/.github/ISSUE_TEMPLATE.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.0.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.1.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.2.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.3.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.4.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.5.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.6.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.7.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.8.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.0.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.1.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.2.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.3.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.4.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.5.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.6.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.7.md" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.7.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-6.0.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-6.1.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-6.2.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-6.3.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-6.4.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-6.5.md" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-6.5.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit.xsd" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit.xsd" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestSuite.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestSuite.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/TestRunner.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/TestRunner.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/.travis.yml" afterPath="$PROJECT_DIR$/vendor/psy/psysh/.travis.yml" />
+      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Shell.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Shell.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/sebastian/comparator/.travis.yml" afterPath="$PROJECT_DIR$/vendor/sebastian/comparator/.travis.yml" />
+      <change beforePath="$PROJECT_DIR$/vendor/sebastian/comparator/ChangeLog.md" afterPath="$PROJECT_DIR$/vendor/sebastian/comparator/ChangeLog.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/sebastian/comparator/src/DateTimeComparator.php" afterPath="$PROJECT_DIR$/vendor/sebastian/comparator/src/DateTimeComparator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Application.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Application.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleExceptionEvent.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleExceptionEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatter.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Formatter/OutputFormatter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/QuestionHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/QuestionHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/InputInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/InputInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/console/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/ApplicationTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/ApplicationTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1decorated.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1decorated.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth2.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth2.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_escapeslines.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_escapeslines.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_linebreaks.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/application_renderexception_linebreaks.txt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/QuestionHelperTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/QuestionHelperTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/DebugClassLoader.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/DebugClassLoader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Exception/ContextErrorException.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Exception/ContextErrorException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/debug/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Resources/ext/tests/001.phpt" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Resources/ext/tests/001.phpt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Resources/ext/tests/002.phpt" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Resources/ext/tests/002.phpt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Resources/ext/tests/002_1.phpt" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Resources/ext/tests/002_1.phpt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Resources/ext/tests/003.phpt" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Resources/ext/tests/003.phpt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/Exception/FlattenExceptionTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/Exception/FlattenExceptionTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/phpt/exception_rethrown.phpt" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/phpt/exception_rethrown.phpt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/phpt/fatal_with_nested_handlers.phpt" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/phpt/fatal_with_nested_handlers.phpt" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/ContainerAwareEventDispatcher.php" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/ContainerAwareEventDispatcher.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/finder/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcacheSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcacheSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MongoDbSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MongoDbSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/NativeSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/NativeSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/WriteCheckSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/WriteCheckSessionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Proxy/NativeProxy.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Proxy/NativeProxy.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/NativeSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/NativeSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/StrictSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/StrictSessionHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/CacheClearer/ChainCacheClearer.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/CacheClearer/ChainCacheClearer.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/CacheClearer/Psr6CacheClearer.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/CacheClearer/Psr6CacheClearer.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/CacheWarmer/CacheWarmerAggregate.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/CacheWarmer/CacheWarmerAggregate.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Client.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Client.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/DataCollector/DataCollector.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/DataCollector/DataCollector.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/DataCollector/EventDataCollector.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/DataCollector/EventDataCollector.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/DataCollector/LoggerDataCollector.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/DataCollector/LoggerDataCollector.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/DataCollector/Util/ValueExporter.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/DataCollector/Util/ValueExporter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/DependencyInjection/AddClassesToCachePass.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/DependencyInjection/AddClassesToCachePass.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/DependencyInjection/Extension.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/DependencyInjection/Extension.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/DependencyInjection/LazyLoadingFragmentHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/DependencyInjection/LazyLoadingFragmentHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/ExceptionListener.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/ExceptionListener.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/SaveSessionListener.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/SaveSessionListener.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Fragment/AbstractSurrogateFragmentRenderer.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Fragment/AbstractSurrogateFragmentRenderer.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Profiler/Profiler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Profiler/Profiler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/CacheClearer/Psr6CacheClearerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/CacheClearer/Psr6CacheClearerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/DependencyInjection/LazyLoadingFragmentHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/DependencyInjection/LazyLoadingFragmentHandlerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/EventListener/ExceptionListenerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/EventListener/ExceptionListenerTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/KernelTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/KernelTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/process/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/PhpProcess.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/PhpProcess.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/Process.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/Process.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/ProcessBuilder.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/ProcessBuilder.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/ProcessUtils.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/ProcessUtils.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Generator/UrlGenerator.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Generator/UrlGenerator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/routing/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Route.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Route.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Generator/UrlGeneratorTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Generator/UrlGeneratorTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Matcher/Dumper/PhpMatcherDumperTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Matcher/Dumper/PhpMatcherDumperTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Dumper/FileDumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Dumper/FileDumper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/translation/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Writer/TranslationWriterTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Writer/TranslationWriterTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Translator.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Translator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Writer/TranslationWriter.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Writer/TranslationWriter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/Caster.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/Caster.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/MongoCaster.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/MongoCaster.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/AbstractCloner.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/AbstractCloner.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Data.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Data.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Test/VarDumperTestTrait.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Test/VarDumperTestTrait.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/VarDumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/VarDumper.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,31 +204,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BloodController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php">
+      <file leaf-file-name="auth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-              <folding>
-                <element signature="e#49#84#0#PHP" expanded="true" />
-                <element signature="e#2933#2995#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="792">
+              <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env_azure" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.env_azure">
+      <file leaf-file-name="AuthServiceProvider.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+              <folding>
+                <element signature="e#33#69#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -51,100 +236,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Blood/Views/index.blade.php">
+      <file leaf-file-name="BroadcastServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1494">
-              <caret line="83" column="20" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-              <folding>
-                <marker date="1513342294173" expanded="true" signature="9:22" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="33:49" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="435:454" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="665:674" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="689:703" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="1018:1097" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="1350:1404" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="1443:1513" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="1685:1738" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="1792:1807" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="2688:2704" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="2785:2796" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="2846:2859" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="2909:2923" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="3013:3034" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="3013:3036" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="3014:3034" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="3134:3164" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="3331:3363" ph="..." />
-                <marker date="1513342294173" expanded="true" signature="4218:4227" ph="..." />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role_create.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/User/Views/role_create.blade.php">
+      <file leaf-file-name="EventServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="49" column="30" lean-forward="false" selection-start-line="43" selection-start-column="27" selection-end-line="49" selection-end-column="30" />
-              <folding>
-                <marker date="1513302691624" expanded="true" signature="9:22" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="33:49" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="434:453" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="647:655" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="692:741" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="768:777" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="1044:1058" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="1151:1173" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="1214:1228" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="2113:2126" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="2609:2622" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="3014:3141" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="3617:3626" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="3644:3697" ph="..." />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="errors.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/User/Views/errors.blade.php">
+      <file leaf-file-name="RouteServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/User/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-64">
+              <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="passwordclient.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Apisettings/Views/apisettings/partials/passwordclient.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1513302691620" expanded="true" signature="5:23" ph="..." />
-                <marker date="1513302691620" expanded="true" signature="201:225" ph="..." />
-                <marker date="1513302691620" expanded="true" signature="249:257" ph="..." />
+                <marker date="1513503245000" expanded="true" signature="606:620" ph="..." />
+                <marker date="1513503245000" expanded="true" signature="1956:1970" ph="..." />
+                <marker date="1513503245000" expanded="true" signature="3283:3308" ph="..." />
+                <marker date="1513503245000" expanded="true" signature="3682:3705" ph="..." />
+                <marker date="1513503245000" expanded="true" signature="3858:3873" ph="..." />
+                <marker date="1513503245000" expanded="true" signature="4016:4032" ph="..." />
+                <marker date="1513503245000" expanded="true" signature="4181:4198" ph="..." />
+                <marker date="1513503245000" expanded="true" signature="4522:4565" ph="..." />
+                <marker date="1513503245000" expanded="true" signature="4953:4980" ph="..." />
+                <marker date="1513503245000" expanded="true" signature="4996:5017" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role_index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/User/Views/role_index.blade.php">
+      <file leaf-file-name="ApisettingsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Apisettings/Controllers/ApisettingsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/User/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1513302691624" expanded="true" signature="9:22" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="33:49" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="435:454" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="649:658" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="874:895" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="2182:2196" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="2277:2288" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="2338:2351" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="2401:2422" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="2472:2491" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="2724:2744" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="2803:2829" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="2889:2915" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="3083:3088" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="3281:3311" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="3462:3494" ph="..." />
-                <marker date="1513302691624" expanded="true" signature="3906:3915" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,15 +329,17 @@
         <option value="$PROJECT_DIR$/database/migrations/2017_11_23_100933_BaseTablesMigration.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_12_15_031637_create_bloods_table.php" />
         <option value="$PROJECT_DIR$/app/Modules/Blood/Models/Blood.php" />
-        <option value="$PROJECT_DIR$/app/Modules/User/Models/User.php" />
         <option value="$PROJECT_DIR$/app/Modules/User/helper.php" />
-        <option value="$PROJECT_DIR$/app/Modules/User/Views/main-sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Modules/Blood/Views/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Blood/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/Modules/User/Models/User.php" />
+        <option value="$PROJECT_DIR$/config/auth.php" />
+        <option value="$PROJECT_DIR$/app/Modules/User/Views/main-sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -203,8 +373,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,40 +389,30 @@
               <item name="bloodincloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="bloodincloud" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="bloodincloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="bloodincloud" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Blood" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bloodincloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bloodincloud" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Blood" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bloodincloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bloodincloud" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="User" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Rladvanture" />
     <property name="SearchEverywhereHistoryKey" value="MySqlConnector.php&#9;FILE&#9;file:///home/santosh/Projects/bloodincloud/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Modules" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -297,27 +455,29 @@
       <workItem from="1513764163630" duration="145000" />
       <workItem from="1513957823662" duration="1080000" />
       <workItem from="1514106913052" duration="1099000" />
-      <workItem from="1515150768781" duration="600000" />
+      <workItem from="1515150768781" duration="2554000" />
+      <workItem from="1515155659790" duration="977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19458000" />
+    <option name="totallyTimeSpent" value="22389000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <frame x="20" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -325,7 +485,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -344,124 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
-          <folding>
-            <marker date="1513342294173" expanded="true" signature="9:22" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="33:49" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="435:454" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="665:674" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="689:703" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1018:1097" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1350:1404" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1443:1513" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1685:1738" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1792:1807" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2688:2704" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2785:2796" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2846:2859" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2909:2923" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3013:3034" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3013:3036" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3014:3034" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3134:3164" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3331:3363" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="4218:4227" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/User/Views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4158">
-          <caret line="231" column="58" lean-forward="false" selection-start-line="231" selection-start-column="58" selection-end-line="231" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/User/Views/main-sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="66" lean-forward="false" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Blood/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/User/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="e#49#84#0#PHP" expanded="true" />
-            <element signature="e#2933#2995#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/User/Models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/User/Views/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Blood/Views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
-          <folding>
-            <marker date="1513342294173" expanded="true" signature="9:22" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="33:49" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="435:454" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="665:674" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="689:703" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1018:1097" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1350:1404" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1443:1513" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1685:1738" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1792:1807" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2688:2704" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2785:2796" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2846:2859" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2909:2923" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3013:3034" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3013:3036" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3014:3034" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3134:3164" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3331:3363" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="4218:4227" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -511,10 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
-          <folding>
-            <element signature="e#49#84#0#PHP" expanded="true" />
-            <element signature="e#2933#2995#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -522,28 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1513342294173" expanded="true" signature="9:22" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="33:49" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="435:454" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="665:674" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="689:703" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1018:1097" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1350:1404" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1443:1513" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1685:1738" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1792:1807" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2688:2704" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2785:2796" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2846:2859" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2909:2923" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3013:3034" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3013:3036" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3014:3034" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3134:3164" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3331:3363" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="4218:4227" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,48 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/8d624a865a44c91570af52916c899f7a1d4e56df.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/User/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/User/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4158">
-          <caret line="231" column="58" lean-forward="false" selection-start-line="231" selection-start-column="58" selection-end-line="231" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/User/Views/main-sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="66" lean-forward="false" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/User/Models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/User/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -694,13 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
@@ -726,10 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding>
-            <element signature="e#49#84#0#PHP" expanded="true" />
-            <element signature="e#2933#2995#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,28 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1494">
           <caret line="83" column="20" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-          <folding>
-            <marker date="1513342294173" expanded="true" signature="9:22" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="33:49" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="435:454" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="665:674" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="689:703" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1018:1097" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1350:1404" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1443:1513" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1685:1738" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="1792:1807" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2688:2704" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2785:2796" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2846:2859" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="2909:2923" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3013:3034" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3013:3036" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3014:3034" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3134:3164" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="3331:3363" ph="..." />
-            <marker date="1513342294173" expanded="true" signature="4218:4227" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -825,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="594">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -836,6 +776,175 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/User/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#43#79#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4158">
+          <caret line="231" column="58" lean-forward="false" selection-start-line="231" selection-start-column="58" selection-end-line="231" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/views/8d624a865a44c91570af52916c899f7a1d4e56df.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/User/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-855">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/User/Views/main-sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <marker date="1515155905217" expanded="true" signature="201:226" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="428:498" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="546:617" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="1688:1704" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="2185:2228" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="2568:2611" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="2659:2673" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="2839:2882" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="2930:2944" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="3116:3159" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="3207:3227" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="3466:3509" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="3857:3900" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="3948:3963" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="4204:4247" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="4589:4632" ph="..." />
+            <marker date="1515155905217" expanded="true" signature="4680:4701" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/User/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/User/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Apisettings/Views/apisettings/partials/passwordclient.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1513503245000" expanded="true" signature="606:620" ph="..." />
+            <marker date="1513503245000" expanded="true" signature="1956:1970" ph="..." />
+            <marker date="1513503245000" expanded="true" signature="3283:3308" ph="..." />
+            <marker date="1513503245000" expanded="true" signature="3682:3705" ph="..." />
+            <marker date="1513503245000" expanded="true" signature="3858:3873" ph="..." />
+            <marker date="1513503245000" expanded="true" signature="4016:4032" ph="..." />
+            <marker date="1513503245000" expanded="true" signature="4181:4198" ph="..." />
+            <marker date="1513503245000" expanded="true" signature="4522:4565" ph="..." />
+            <marker date="1513503245000" expanded="true" signature="4953:4980" ph="..." />
+            <marker date="1513503245000" expanded="true" signature="4996:5017" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Apisettings/Controllers/ApisettingsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <element signature="e#33#69#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

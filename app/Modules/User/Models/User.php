@@ -12,12 +12,13 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Illuminate\Notifications\Notifiable;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
+use Laravel\Passport\HasApiTokens;
 
 
 class User extends Model implements AuthenticatableContract,
     CanResetPasswordContract
 {
-    use EntrustUserTrait, Authenticatable, CanResetPassword, Notifiable;
+    use EntrustUserTrait, Authenticatable, CanResetPassword, Notifiable,HasApiTokens;
 
 
     /**

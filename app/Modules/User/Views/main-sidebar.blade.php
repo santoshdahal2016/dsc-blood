@@ -67,6 +67,24 @@
                         </ul>
                     </li>
                     @endability
+                    @ability('admin','setting_menu_index')
+
+                    <li class="{{ (($menus['main_menu'] == 4)?'active' :'') }} ">
+                        <a href="javascript:void(0);" class=" menu-toggle">
+                            <i class="material-icons">build</i><span>Settings</span>
+
+                        </a>
+                        <ul class="ml-menu">
+
+                            @ability('admin','api_index')
+                            <li class="{{ (($menus['sub_menu'] == 43)?'active' :'') }}">
+                                <a href="{{ url('/apisettings') }}"> API Settings</a></li>
+                            @endability
+
+
+                        </ul>
+                    </li>
+                    @endability
 
 
             </ul>
