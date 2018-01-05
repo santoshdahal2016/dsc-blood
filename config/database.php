@@ -44,7 +44,7 @@ return [
             'host' => env('DB_HOST', 'bloodincloudsql.mysql.database.azure.com'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'bloodincloud'),
-            'username' => env('DB_USERNAME', 'rabin@bloodincloudsql'),
+            'username' => env('DB_USERNAME', 'santosh@bloodincloudsql'),
             'password' => env('DB_PASSWORD', 'Bl00dincl0ud'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
