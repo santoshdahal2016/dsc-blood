@@ -11,6 +11,11 @@
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::post('register', 'ApiRegisterController@register');
+Route::post('login', 'ApiLoginController@login');
+Route::post('refresh', 'ApiLoginController@refresh');
+
 Route::group(['middleware' => ['auth:api']], function () {
 
     Route::get('blood', 'ApiController@blood');
