@@ -19,6 +19,7 @@ Route::post('refresh', 'ApiLoginController@refresh');
 Route::group(['middleware' => ['auth:api']], function () {
 
     Route::get('blood', 'ApiController@blood');
+    Route::post('edit', 'ApiController@BloodEdit');
 
 
 });

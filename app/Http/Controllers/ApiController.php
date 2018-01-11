@@ -48,4 +48,9 @@ class ApiController extends Controller
         return response()->json($blood);
     }
 
+    public function BloodEdit(Request $request){
+        $response =   ['status'=>"success", 'name'=>$request->name , 'phone'=>$request->phone,'blood'=>$request->blood];
+        return response()->json($response);
+    }
+
 }
