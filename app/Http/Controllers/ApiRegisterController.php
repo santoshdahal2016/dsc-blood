@@ -24,7 +24,7 @@ class ApiRegisterController extends controller
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email|unique:users,email',
-            'password' => 'required|min:6'
+            'password' => 'required|min:4'
         ]);
         $user = User::create([
             'name' => request('name'),
