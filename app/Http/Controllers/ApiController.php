@@ -35,6 +35,7 @@ class ApiController extends Controller
         $pieces = explode(",", $name);
         $pieces = array_filter($pieces);
         $pieces = array_unique($pieces);
+
         $data = Blood::select('*')->whereIn('phone', $pieces)->with('entry')->orderByRaw(\DB::raw("FIELD(phone, ".implode(",",$pieces).")"))->get();
         foreach($data as $k => $item){
             $bloodgroup = $item->entry->where('parent_user_id',$user->id)->first()->blood_group;

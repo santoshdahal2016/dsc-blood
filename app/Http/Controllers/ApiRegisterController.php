@@ -21,6 +21,8 @@ class ApiRegisterController extends controller
         $this->client = Client::find(1);
     }
     public function register(Request $request){
+
+        return $request->all();
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email|unique:users,email',
