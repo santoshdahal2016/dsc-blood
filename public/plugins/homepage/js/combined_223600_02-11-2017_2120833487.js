@@ -3219,7 +3219,8 @@ var HM = HM || {};
         right: 80,
         top: 30,
         bottom: 30
-    }, t.SMALL_MIN_SIZE = 699, t.MED_MIN_SIZE = 1165, t.REG_MIN_SIZE = 1260, t.LARGE_MIN_SIZE = 1830, t.storyMargins = t.STORY_MARGINS_NORMAL, t.isStoryOneColumn, t.TIMELINE_MODULE = null, t.isTouch = BrowserDetect.MOBILE || BrowserDetect.TABLET, t.SITE_WRAPPER = null, t.TEMPLATE_LAYER = null, t.seenScrollIndicator = !1, t.WHITELISTED_DOMAINS = ["192.168", "127.0.0.1", "witness-change.local", "tranquil-thicket-11432.herokuapp.com", "witness-change-preview.herokuapp.com", "witness-change-live.herokuapp.com", "onedayinmyworld.com"], t.LOAD_COMPLETE = "load_complete", t.scrollController = new ScrollController, t.audioController = new AudioController, e.lastScrollY = 0, e.Globals = t
+    }, t.SMALL_MIN_SIZE = 699, t.MED_MIN_SIZE = 1165, t.REG_MIN_SIZE = 1260, t.LARGE_MIN_SIZE = 1830, t.storyMargins = t.STORY_MARGINS_NORMAL, t.isStoryOneColumn, t.TIMELINE_MODULE = null, t.isTouch = BrowserDetect.MOBILE || BrowserDetect.TABLET, t.SITE_WRAPPER = null, t.TEMPLATE_LAYER = null, t.seenScrollIndicator = !1, t.WHITELISTED_DOMAINS = ["192.168", "127.0.0.1", "witness-change.local", "tranquil-thicket-11432.herokuapp.com", "witness-change-preview.herokuapp.com", "witness-change-live.herokuapp.com", "onedayinmyworld.com"], t.LOAD_COMPLETE = "load_complete", t.scrollController = new ScrollController,
+        t.audioController = new AudioController, e.lastScrollY = 0, e.Globals = t
 }(window), function (e) {
     "use strict";
     var t = {};

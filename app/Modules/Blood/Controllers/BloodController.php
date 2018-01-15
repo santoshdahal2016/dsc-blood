@@ -136,6 +136,12 @@ class BloodController extends Controller
         //
     }
 
+    public function search()
+    {
+        return view("Blood::frontend.result");
+
+    }
+
     public function api(Request $request)
     {
         $name = $request->input('phone');

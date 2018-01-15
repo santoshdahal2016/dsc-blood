@@ -335,20 +335,24 @@
             text-align: start !important;
 
         }
-        .feature{
+
+        .feature {
 
         }
-        .feature-main{
-            text-align:center;
+
+        .feature-main {
+            text-align: center;
 
         }
-        .feature-main h3,.news-main h3,.member-top h3{
+
+        .feature-main h3, .news-main h3, .member-top h3 {
             color: #fff;
             font-weight: 300;
             margin: 0;
             font-size: 3.2em;
         }
-        .feature-main p,.news-main p,.member-top p{
+
+        .feature-main p, .news-main p, .member-top p {
             color: #fff;
             font-size: 18px;
             font-weight: 200;
@@ -356,29 +360,36 @@
             width: 73%;
             margin: 1em auto 0;
         }
-        .feature-left{
-            width:16%;
-            float:left;
+
+        .feature-left {
+            width: 16%;
+            float: left;
         }
-        .feature-right{
-            width:84%;
-            float:right;
+
+        .feature-right {
+            width: 84%;
+            float: right;
         }
+
         .feature-bottom {
             margin-top: 3%;
         }
+
         .feature-right h4 {
             color: #fff;
             font-size: 2.2em;
             font-weight: 500;
             margin: 0;
         }
-        .feature-right{
-            text-align:left;
+
+        .feature-right {
+            text-align: left;
         }
+
         .ftr-one {
             margin-top: 4em;
         }
+
         .feature-right p {
             color: #fff;
             font-size: 17px;
@@ -396,8 +407,13 @@
 
 
 <audio id="backgroundMusic" loop="">
-    <source src="{{ url('/plugins/homepage/audio/background.ogg') }}" type="audio/ogg">
-    <source src="{{ url('/plugins/homepage/audio/background.mp3') }}" type="audio/mpeg">
+    {{--<source src="{{ url('/plugins/homepage/audio/background.ogg') }}" type="audio/ogg">--}}
+    {{--<source src="{{ url('/plugins/homepage/audio/background.mp3') }}" type="audio/mpeg">--}}
+
+    <source src="" type="audio/ogg">
+    <source src="" type="audio/mpeg">
+
+
 </audio>
 <audio id="backgroundMusicFiltered" loop="">
     <source src="{{ url('/plugins/homepage/audio/background-filtered.ogg') }}" type="audio/ogg">
@@ -553,34 +569,6 @@
                         </nav>
                     </header>
 
-                    {{--<div class="intro">--}}
-                    {{--<h1>DONATE BLOOD AND GET REAL BLESSINGS.</h1>--}}
-
-                    {{--<p>--}}
-                    {{--Blood is the most precious gift that anyone can give to another person.--}}
-                    {{--Donating blood not only saves the life also save donor's lives.--}}
-
-                    {{--</p>--}}
-
-
-                    {{--</div>--}}
-                    {{--<div style="margin-top:220px" class="  blobs">--}}
-                    {{--<div class="blob"></div>--}}
-                    {{--<div class="blob"></div>--}}
-                    {{--<div class="blob"></div>--}}
-                    {{--<div class="blob"></div>--}}
-                    {{--</div>--}}
-
-                    {{--<svg xmlns="http://www.w3.org/2000/svg" version="1.1">--}}
-                    {{--<defs>--}}
-                    {{--<filter id="goo">--}}
-                    {{--<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>--}}
-                    {{--<feColorMatrix in="blur" mode="matrix"--}}
-                    {{--values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"/>--}}
-                    {{--<feBlend in="SourceGraphic" in2="goo"/>--}}
-                    {{--</filter>--}}
-                    {{--</defs>--}}
-                    {{--</svg>--}}
 
                     <div class="pt-5 text-white bg-danger">
                         <div class="container">
@@ -589,16 +577,16 @@
                                     <img style="padding-top: 30px" class="d-block mx-auto img-fluid"
                                          src="{{'/images/phone.png'}}"></div>
                                 <div class="col-md-7 align-self-baseline" style="padding-top: 10%">
-                                    <form class="w-100 border border-danger my-5" method="post" action="search">
-                                        <input type="hidden" name="advanceSearch" value="">
+                                    <form class="w-100 border border-danger my-5" method="get" action="{{url('/search')}}">
+                                        {{ csrf_field() }}
                                         <div class="form-group"><label class="lebal">Location</label>
-                                            <input type="search" name="search[address]"
+                                            <input type="search" name="address"
                                                    class="form-control form-control-lg" placeholder="Location">
                                             <small class="text-muted form-text"></small>
                                         </div>
                                         <div class="form-group"><label class="form-control-label lebal">Blood
                                                 Group</label><select class="form-control form-control-lg"
-                                                                     name="search[bloodgroup]">
+                                                                     name="bloodgroup">
                                                 <option value="">All</option>
                                                 <option value="A+">A+</option>
                                                 <option value="B+">B+</option>
@@ -610,7 +598,7 @@
                                                 <option value="AB-">AB-</option>
                                             </select></div>
                                         <button type="submit" name="go"
-                                                class="btn btn-block btn-lg btn-light text-muted text-center">Submit
+                                                class="btn btn-block btn-lg btn-light text-muted text-center">Search
                                         </button>
                                     </form>
                                 </div>
@@ -623,118 +611,102 @@
                 </div>
                 <div class="section feature" id="section1">
 
-                        <div class="container">
-                            <!---728x90--->
-                            <div class="feature-main">
-                                <h3>Awesome Features</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                                    nascetur</p>
-                            </div>
-                            <div class="feature-bottom">
-                                <div class="col-md-6 feature-bottom-left">
-                                    <div class="ftr-one">
-                                        <div class="feature-left">
-                                            <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-1.png" alt="">
-                                        </div>
-                                        <div class="feature-right">
-                                            <h4>Upload</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ligula
-                                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                                                parturient montes, nasceturridiculus mus. Donec quam felis, ultricies
-                                                nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                                                enim. Donec pede justo, fringilla vel, aliquet nec</p>
-                                        </div>
-                                        <div class="clearfix"></div>
+                    <div class="container">
+                        <!---728x90--->
+                        <div class="feature-main">
+                            <h3>Awesome Features</h3>
+                            <p>It is not just piece of software but it the eco-system consisting of Android app ,
+                                Website , database connected through central server and are work parallely. We have
+                                centralized data server which store all the data of App and Web App</p>
+                        </div>
+                        <div class="feature-bottom">
+                            <div class="col-md-6 feature-bottom-left">
+                                <div class="ftr-one">
+                                    <div class="feature-left">
+                                        <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-1.png" alt="">
                                     </div>
-
-                                </div>
-                                <div class="col-md-6 feature-bottom-left">
-                                    <div class="ftr-one">
-                                        <div class="feature-left">
-                                            <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-2.png" alt="">
-                                        </div>
-                                        <div class="feature-right">
-                                            <h4>Easy Setting</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ligula
-                                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                                                parturient montes, nasceturridiculus mus. Donec quam felis, ultricies
-                                                nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                                                enim. Donec pede justo, fringilla vel, aliquet nec</p>
-                                        </div>
-                                        <div class="clearfix"></div>
+                                    <div class="feature-right">
+                                        <h4>No Privacy Compromised</h4>
+                                        <p>We do not compromise any one detail . Through mobile app user can only view
+                                            blood group of contact list and only user who give premission to donate
+                                            blood are listed online . We keep record of every people who access and
+                                            search blood.</p>
                                     </div>
-
+                                    <div class="clearfix"></div>
                                 </div>
-                                <div class="clearfix"></div>
+
                             </div>
+                            <div class="col-md-6 feature-bottom-left">
+                                <div class="ftr-one">
+                                    <div class="feature-left">
+                                        <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-2.png" alt="">
+                                    </div>
+                                    <div class="feature-right">
+                                        <h4>Blood in emergency</h4>
+                                        <p>Don't bother to search blood in emergency in blood bank , Just download our
+                                            app find Blood Match in your Contact List . You can also search blood in our
+                                            website through location</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
+                </div>
 
                 <div class="section feature" style="background-color:rgb(33, 27, 6)" id="help">
                     <div class="container">
                         <!---728x90--->
-                            <div class="col-md-6 feature-bottom-left">
-                                <div class="ftr-one">
-                                    <div class="feature-left">
-                                        <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-3.png" alt="">
-                                    </div>
-                                    <div class="feature-right">
-                                        <h4>Profile Page</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ligula
-                                            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                                            parturient montes, nasceturridiculus mus. Donec quam felis, ultricies
-                                            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                                            enim. Donec pede justo, fringilla vel, aliquet nec</p>
-                                    </div>
-                                    <div class="clearfix"></div>
+                        <div class="col-md-6 feature-bottom-left">
+                            <div class="ftr-one">
+                                <div class="feature-left">
+                                    <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-3.png" alt="">
                                 </div>
-                                <div class="ftr-one">
-                                    <div class="feature-left">
-                                        <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-5.png" alt="">
-                                    </div>
-                                    <div class="feature-right">
-                                        <h4>Connect Chat</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ligula
-                                            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                                            parturient montes, nasceturridiculus mus. Donec quam felis, ultricies
-                                            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                                            enim. Donec pede justo, fringilla vel, aliquet nec</p>
-                                    </div>
-                                    <div class="clearfix"></div>
+                                <div class="feature-right">
+                                    <h4>User Registration</h4>
+                                    <p>We have impleented powerful user management system which can track user health
+                                        and do fraud minimization</p>
                                 </div>
+                                <div class="clearfix"></div>
                             </div>
-                            <div class="col-md-6 feature-bottom-left">
-                                <div class="ftr-one">
-                                    <div class="feature-left">
-                                        <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-4.png" alt="">
-                                    </div>
-                                    <div class="feature-right">
-                                        <h4>Fast Location</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ligula
-                                            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                                            parturient montes, nasceturridiculus mus. Donec quam felis, ultricies
-                                            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                                            enim. Donec pede justo, fringilla vel, aliquet nec</p>
-                                    </div>
-                                    <div class="clearfix"></div>
+                            <div class="ftr-one">
+                                <div class="feature-left">
+                                    <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-5.png" alt="">
                                 </div>
-                                <div class="ftr-one">
-                                    <div class="feature-left">
-                                        <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-6.png" alt="">
-                                    </div>
-                                    <div class="feature-right">
-                                        <h4>Profile Page</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ligula
-                                            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                                            parturient montes, nasceturridiculus mus. Donec quam felis, ultricies
-                                            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                                            enim. Donec pede justo, fringilla vel, aliquet nec</p>
-                                    </div>
-                                    <div class="clearfix"></div>
+                                <div class="feature-right">
+                                    <h4>User Blood Edit</h4>
+                                    <p>Any registrated user can edit blood group of any one within their contact
+                                        list</p>
                                 </div>
+                                <div class="clearfix"></div>
                             </div>
-                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-6 feature-bottom-left">
+                            <div class="ftr-one">
+                                <div class="feature-left">
+                                    <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-4.png" alt="">
+                                </div>
+                                <div class="feature-right">
+                                    <h4>Speed Search</h4>
+                                    <p>We provide search result with in a minute and mobile app can synchronize with in
+                                        a minute</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="ftr-one">
+                                <div class="feature-left">
+                                    <img src="https://p.w3layouts.com/demos/appmo/web/images/feature-6.png" alt="">
+                                </div>
+                                <div class="feature-right">
+                                    <h4>Totally Free</h4>
+                                    <p>Don't worry , it's totally free.</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
                     </div>
 
                 </div>
@@ -742,21 +714,13 @@
 
                     <div class="intro">
                         <div class="row">
-                            <div class="col-lg-3">
-                                <h3 style="padding-top:15px;color:white">How we work?</h3>
-                                LGZ5JQvHIIAHImQBHv
-                                PCr95GqWKx4ou20iZsFrDMApdOuBIF
-                                LNHpSpuwq2mfMFFm3JjFlSzR6bP2sdfs
-                                fs
-                                f
-                                sf
-                                sdf
-                                sd
-                                fsfslflsjfhklsjdhf
-                                sdfshdfkjsjkhfjsf
-                                sdfsdfkshdfk
+                            <div class="col-lg-5" style="padding: 50px;">
+                                <h3 style="padding-top:20%;color:white">How we work?</h3>
+                                It is not just piece of software but it the eco-system consisting of Android app ,
+                                Website , database connected through central server and are work parallely. We have
+                                centralized data server which store all the data of App and Web App
                             </div>
-                            <div class="col-lg-9">
+                            <div class="col-lg-7">
                                 <svg
                                         xmlns:dc="http://purl.org/dc/elements/1.1/"
                                         xmlns:cc="http://creativecommons.org/ns#"
@@ -1627,48 +1591,69 @@
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                     <div class="appointment-form-wrapper text-center clearfix">
                                         <h3 class="join-heading">Regiter Yourself</h3>
-                                        <form class="appoinment-form">
+                                        <form class="appoinment-form" method="post" action="{{url('/register')}}">
                                             <div class="form-group col-md-6">
                                                 <input id="your_name" class="form-control" placeholder="Name"
-                                                       type="text">
+                                                       type="text" required>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <input id="your_email" class="form-control" placeholder="Email"
-                                                       type="email">
+                                                       type="email" required>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <input id="your_phone" class="form-control" placeholder="Phone"
-                                                       type="text">
+                                                       type="phone" required>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <div class="select-style">
-                                                    <select class="form-control" name="your_center">
-                                                        <option>Donation Center</option>
-                                                        <option>Los Angles</option>
-                                                        <option>California</option>
+                                                    <select class="form-control" name="blood" required>
+                                                        <option value="">Select Blood Group</option>
+                                                        <option value="A+">A+</option>
+                                                        <option value="B+">B+</option>
+                                                        <option value="O+">O+</option>
+                                                        <option value="AB+">AB+</option>
+                                                        <option value="A-">A-</option>
+                                                        <option value="B-">B-</option>
+                                                        <option value="O-">O-</option>
+                                                        <option value="AB-">AB-</option>
+                                                        <option value="UNKNOWN">UNKNOWN</option>
                                                     </select>
                                                 </div>
                                             </div>
 
                                             <div class="form-group col-md-6">
-                                                <input id="your_date" class="form-control" placeholder="Date"
-                                                       type="text">
+                                                <input id="your_password" class="form-control" placeholder="Password"
+                                                       type="password" required>
                                             </div>
+
+                                            <div class="form-group col-md-6">
+                                                <input id="your_repassword" class="form-control" placeholder="Re Password"
+                                                       type="password" required>
+                                            </div>
+
 
 
                                             <div class="form-group col-md-6">
-                                                <input id="your_time" class="form-control" placeholder="Time"
-                                                       type="text">
+                                                <input id="your_primary" class="form-control" placeholder="Primary Place"
+                                                       type="text" required>
                                             </div>
 
-                                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                <textarea id="textarea_message" class="form-control" rows="4"
-                                                          placeholder="Your Message..."></textarea>
+                                            <div class="form-group col-md-6">
+                                                <input id="your_secondary" class="form-control" placeholder="Secondary Place"
+                                                       type="text" required>
                                             </div>
 
+                                            <div class="form-group col-md-12">
+                                                <label>Able and Donate Blood <input id="your_secondary" class="form-control" placeholder="Secondary Place"
+                                                                                    type="checkbox" required></label>
+
+
+                                            </div>
+
+
+
                                             <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                <button id="btn_submit" class="btn-submit" type="submit">Get
-                                                    Appointment
+                                                <button id="btn_submit" class="btn-submit" type="submit">REGISTER
                                                 </button>
                                             </div>
 
@@ -1707,11 +1692,9 @@
 
                                                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                                     <p>
-                                                        We are world largest and trustful blood donation center. We have
-                                                        been working since 1973 with a prestigious vision to helping
-                                                        patient to provide blood.
-                                                        We are working all over the world, organizing blood donation
-                                                        campaign to grow awareness among the people to donate blood.
+                                                        It is not just piece of software but it the eco-system consisting of Android app ,
+                                                        Website , database connected through central server and are work parallely. We have
+                                                        centralized data server which store all the data of App and Web App.
                                                     </p>
                                                 </div> <!--  end .col-lg-9  -->
 
@@ -1764,16 +1747,15 @@
 
                                                     <i class="fa fa-envelope-o fa-contact"></i>
                                                     <p>
-                                                        <a href="http://templates.bwlthemes.com/blood_donation/home-2.html#">support@donation.com</a><br><a
-                                                                href="http://templates.bwlthemes.com/blood_donation/home-2.html#">helpme@donation.com</a>
+                                                        <a href="mailto:e.blood2017@gmail.com">e.blood2017@gmail.com</a>
                                                     </p>
 
                                                     <i class="fa fa-location-arrow fa-contact"></i>
-                                                    <p>Road-2,3/A East Shibgonj<br>Sylhet-3100, Bangladesh</p>
+                                                    <p>Western Region campus<br>Pokhara, Nepal</p>
 
-                                                    <i class="fa fa-phone fa-contact"></i>
-                                                    <p>Office:&nbsp; (+880) 0823 560 433<br>Cell:&nbsp; (+880) 0723 161
-                                                        343</p>
+                                                    {{--<i class="fa fa-phone fa-contact"></i>--}}
+                                                    {{--<p>Office:&nbsp; (+880) 0823 560 433<br>Cell:&nbsp; (+880) 0723 161--}}
+                                                        {{--343</p>--}}
 
                                                 </div>
 
@@ -1797,74 +1779,13 @@
                                                 <ul class="footer-useful-links">
 
                                                     <li>
-                                                        <a href="http://templates.bwlthemes.com/blood_donation/home-2.html#">
+                                                        <a href="{{url('/aboutus')}}">
                                                             <i class="fa fa-caret-right fa-footer"></i>
-                                                            Thalassemia
+                                                            About Us
                                                         </a>
                                                     </li>
 
-                                                    <li>
-                                                        <a href="http://templates.bwlthemes.com/blood_donation/home-2.html#">
-                                                            <i class="fa fa-caret-right fa-footer"></i>
-                                                            Cell Elofrosis
-                                                        </a>
-                                                    </li>
 
-                                                    <li>
-                                                        <a href="http://templates.bwlthemes.com/blood_donation/home-2.html#">
-                                                            <i class="fa fa-caret-right fa-footer"></i>
-                                                            Myelodysasia
-                                                        </a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="http://templates.bwlthemes.com/blood_donation/home-2.html#">
-                                                            <i class="fa fa-caret-right fa-footer"></i>
-                                                            Blood Count
-                                                        </a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="http://templates.bwlthemes.com/blood_donation/home-2.html#">
-                                                            <i class="fa fa-caret-right fa-footer"></i>
-                                                            Hemolytimia
-                                                        </a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="http://templates.bwlthemes.com/blood_donation/home-2.html#">
-                                                            <i class="fa fa-caret-right fa-footer"></i>
-                                                            Ychromas Eosis
-                                                        </a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="http://templates.bwlthemes.com/blood_donation/home-2.html#">
-                                                            <i class="fa fa-caret-right fa-footer"></i>
-                                                            Hyrcoagulable
-                                                        </a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="http://templates.bwlthemes.com/blood_donation/home-2.html#">
-                                                            <i class="fa fa-caret-right fa-footer"></i>
-                                                            Thrombo Xtosis
-                                                        </a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="http://templates.bwlthemes.com/blood_donation/home-2.html#">
-                                                            <i class="fa fa-caret-right fa-footer"></i>
-                                                            Sicklenemiaxs
-                                                        </a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="http://templates.bwlthemes.com/blood_donation/home-2.html#">
-                                                            <i class="fa fa-caret-right fa-footer"></i>
-                                                            Aplastic Anemia
-                                                        </a>
-                                                    </li>
 
                                                 </ul>
 
