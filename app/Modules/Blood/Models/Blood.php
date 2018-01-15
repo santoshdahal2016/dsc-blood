@@ -6,13 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Blood extends Model {
 
-    protected $fillable = ['name', 'phone', 'blood_group','parent_user_id'];
+    protected $fillable = ['name', 'phone'];
 
-
-    public function parent()
-    {
-        return $this->hasOne('App\Modules\User\Models\User', 'parent_user_id');
-    }
 
     public function user()
     {

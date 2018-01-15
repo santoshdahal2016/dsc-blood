@@ -15,13 +15,20 @@ class CreateBloodsTable extends Migration
     {
         Schema::create('bloods', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->bigInteger('phone');
-            $table->enum('blood_group' ,['o+','o-','A+','A-','B+','B-','AB+','AB-','Unknown']);
+            $table->foreign('phone')->references('phone')->on('users')
+                ->onUpdate('cascade');
+            $table->timestamps();
+        });
+
+        Schema::create('blood_entry', function (Blueprint $table) {
+            $table->increments('id');
+            $table->bigInteger('phone_id');
+            $table->enum('blood_group' ,['O+','O-','A+','A-','B+','B-','AB+','AB-','UNKNOWN']);
+
             $table->integer('parent_user_id')->unsigned();
             $table->foreign('parent_user_id')->references('id')->on('users')
-                ->onUpdate('cascade');
-            $table->foreign('phone')->references('phone')->on('users')
                 ->onUpdate('cascade');
             $table->timestamps();
         });
@@ -35,5 +42,6 @@ class CreateBloodsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('bloods');
+        Schema::dropIfExists('blood_entry');
     }
 }
