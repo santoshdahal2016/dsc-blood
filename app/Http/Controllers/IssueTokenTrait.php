@@ -21,7 +21,7 @@ trait IssueTokenTrait{
             'scope' => $scope
         ];
         if($grantType !== 'social'){
-            $params['username'] = $request->username ?: $request->email;
+            $params['username'] = $request->email ?: $request->username;
         }
         $request->request->add($params);
         $proxy = Request::create('oauth/token', 'POST');

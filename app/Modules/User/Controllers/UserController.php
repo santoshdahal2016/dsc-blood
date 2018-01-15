@@ -109,11 +109,7 @@ class UserController extends Controller
             $created_user = User::create($user_input);
             $created_user->roles()->attach($request['roles_id']);
 
-            $credential['name'] = null;
-            $credential['password'] = null;
-            $credential['user_id'] = $created_user->id;
-            Sms_credentials::create($credential);
-            Email_credentials::create($credential);
+
             return redirect('/user/');
             // }
         }
