@@ -160,7 +160,7 @@ class BloodController extends Controller
 
     public function api(Request $request)
     {
-        
+
 
         $name = $request->input('number');
        
