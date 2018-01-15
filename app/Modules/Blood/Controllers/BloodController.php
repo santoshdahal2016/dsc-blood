@@ -161,12 +161,12 @@ class BloodController extends Controller
     public function api(Request $request)
     {
         $name = $request->input('phone');
-        dd($name);
+       
         $pieces = explode(",", $name);
-        dd($pieces);
+        
         $pieces = array_filter($pieces);
         $pieces = array_unique($pieces);
-        dd($pieces);
+       
         $data = Blood::select('*')->whereIn('phone', $pieces)->with('entry')->orderByRaw(\DB::raw("FIELD(phone, ".implode(",",$pieces).")"))->get();
         foreach($data as $k => $item){
             $bloodgroup = " ";
