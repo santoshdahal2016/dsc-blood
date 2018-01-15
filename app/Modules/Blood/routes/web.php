@@ -4,9 +4,9 @@ Route::group(['module' => 'Blood', 'middleware' => ['web'], 'namespace' => 'App\
 
     Route::get('/blood','BloodController@index');
     Route::post('/blood/import','BloodController@import')->name('blood.import');
-    Route::post('/blood/api','BloodController@api');
 
     Route::get('/search','BloodController@search');
 
 
 });
+Route::post('/blood/api','\App\Modules\Blood\Controllers\BloodController@api');
