@@ -416,8 +416,10 @@
 
 </audio>
 <audio id="backgroundMusicFiltered" loop="">
-    <source src="{{ url('/plugins/homepage/audio/background-filtered.ogg') }}" type="audio/ogg">
-    <source src="{{ url('/plugins/homepage/audio/background-filtered.mp3') }}" type="audio/mpeg">
+    <source src="" type="audio/ogg">
+    <source src="" type="audio/mpeg">
+    {{--<source src="{{ url('/plugins/homepage/audio/background-filtered.ogg') }}" type="audio/ogg">--}}
+    {{--<source src="{{ url('/plugins/homepage/audio/background-filtered.mp3') }}" type="audio/mpeg">--}}
 </audio>
 
 <div id="siteWrapper">
