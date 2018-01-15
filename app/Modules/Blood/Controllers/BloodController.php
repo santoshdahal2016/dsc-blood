@@ -48,24 +48,33 @@ class BloodController extends Controller
             $data = Excel::load($path)->get();
             $user = Auth::user();
             $error_data = 0;
+//            dd($data);
             if ($data->count()) {
                 foreach ($data as $key => $value) {
                     $data1['name'] = $value->name;
                     $data1['phone'] = $value->phone;
                     $data2['blood_group'] = $value->blood_group;
+                    $data1['blood_group'] = $value->blood_group;
+                    $data2['parent_user_id'] = $user->id;
+
+
+//                    dd($value);
                     $validator = Validator::make($data1, [
                         'name' => 'required|max:255',
                         'phone' => 'required|max:10',
                         'blood_group' => 'required|max:7',
                     ]);
+
+//                    dd($validator);
                     if ($validator->fails()) {
                         ++$error_data;
                         continue;
                     }
                     $blood = Blood::where('phone', $value->phone)->first();
+
                     if (isset($blood)) {
                         $data2['phone_id'] = $blood->id;
-                        $already = BloodEntry::where('phone_id', $blood->id)->where('parent_user_id', $user->id)->get();
+                        $already = BloodEntry::where('phone_id', $blood->id)->where('parent_user_id', $user->id)->first();
                         if (isset($already)) {
                             $already->fill($data2)->save();
                         } else {
@@ -74,8 +83,9 @@ class BloodController extends Controller
                     } else {
 
                         $data2['parent_user_id'] = $user->id;
-                        $data2['phone_id'] = $blood->id;
                         $blood = Blood::create($data1);
+                        $data2['phone_id'] = $blood->id;
+
                         if ($blood) {
 
                             BloodEntry::create($data2);
@@ -154,17 +164,24 @@ class BloodController extends Controller
         $pieces = explode(",", $name);
         $pieces = array_filter($pieces);
         $pieces = array_unique($pieces);
-        $data = Blood::select('*')->whereIn('phone', $pieces)->orderByRaw(\DB::raw("FIELD(phone, " . implode(",", $pieces) . ")"))->get();
-        foreach ($data as $k => $item) {
-            if ($item != null) {
-                $bloods[] = ['id' => $item->id, 'name' => $item->name, 'phone' => $item->phone, 'blood' => $item->blood_group];
+        $data = Blood::select('*')->whereIn('phone', $pieces)->with('entry')->orderByRaw(\DB::raw("FIELD(phone, ".implode(",",$pieces).")"))->get();
+        foreach($data as $k => $item){
+            $bloodgroup = " ";
+            if(isset($bloodgroup)){
+                $values = array_count_values($item->entry->pluck('blood_group')->toArray());
+                arsort($values);
+                $bloodgroup = array_slice(array_keys($values), 0, 1, true);
+                $bloodgroup = $bloodgroup[0];
+            }
+            if ($item != null){
+                $bloods[] =   ['id'=>$item->id, 'name'=>$item->name , 'phone'=>$item->phone,'blood'=>$bloodgroup];
             }
         }
-        if (isset($bloods)) {
-            $blood["bloods"] = $bloods;
+        if(isset($bloods)){
+            $blood["bloods"] =$bloods;
 
-        } else {
-            $blood["bloods"] = null;
+        }else{
+            $blood["bloods"] =null;
         }
         return response()->json($blood);
     }

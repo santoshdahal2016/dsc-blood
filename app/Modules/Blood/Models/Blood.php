@@ -14,4 +14,10 @@ class Blood extends Model {
         return $this->hasOne('App\Modules\User\Models\User', 'phone');
     }
 
+    public function  entry(){
+        return $this->hasMany('App\Modules\Blood\Models\BloodEntry', 'phone_id' );
+
+    }
+
+
 }

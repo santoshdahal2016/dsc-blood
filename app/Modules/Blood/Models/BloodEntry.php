@@ -9,6 +9,8 @@
 namespace App\Modules\Blood\Models;
 
 
+use Illuminate\Database\Eloquent\Model;
+
 class BloodEntry extends Model {
 
     protected  $table = "blood_entry";
