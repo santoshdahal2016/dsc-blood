@@ -160,7 +160,9 @@ class BloodController extends Controller
 
     public function api(Request $request)
     {
-        $name = $request->input('phone');
+         dd($request->all());
+
+        $name = $request->input('number');
        
         $pieces = explode(",", $name);
         
