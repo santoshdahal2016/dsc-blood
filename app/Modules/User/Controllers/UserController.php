@@ -94,8 +94,10 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+
         dd($request->all());
         $user = Auth::user();
+
 
         if($user->hasRole('admin')|| $user->can('user_store')) {
             $this->validate($request, [
@@ -104,9 +106,11 @@ class UserController extends Controller
                 'password' => 'required|min:6|confirmed',
                 'roles_id' => 'required'
             ]);
+
             $user_input = $request->all();
             $user_input['password'] = bcrypt($user_input['password']);
 
+            
             $created_user = User::create($user_input);
             $created_user->roles()->attach($request['roles_id']);
 
