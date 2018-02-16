@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Validator;
 
 class BloodController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth',['except'=>['api']]);
+
+    }
 
     /**
      * Display a listing of the resource.
@@ -100,6 +105,13 @@ class BloodController extends Controller
             }
             return redirect()->back();
         }
+    }
+
+
+    public function add()
+    {
+        return view("Blood::add");
+
     }
 
     public function store(Request $request)
