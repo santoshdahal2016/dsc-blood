@@ -4,6 +4,8 @@ namespace App\Modules\Blood\Controllers;
 
 use App\Modules\Blood\Models\Blood;
 use App\Modules\Blood\Models\BloodEntry;
+use App\Modules\User\Models\User;
+use App\Modules\User\Models\UserDetail;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -23,6 +25,7 @@ class BloodController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         $blood = Blood::all();
@@ -116,7 +119,58 @@ class BloodController extends Controller
 
     public function store(Request $request)
     {
-        //
+        $user = Auth::user();
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'phone' => 'required|max:10',
+            'blood' => 'required|max:7',
+        ]);
+        $data1['name'] = $request->name;
+        $data1['phone'] = $request->phone;
+        $data2['blood_group'] = $request->blood;
+        $data1['blood_group'] = $request->blood;
+        $data2['parent_user_id'] = $user->id;
+        $blood = Blood::where('phone', $request->phone)->first();
+
+        if (isset($blood)) {
+            $data2['phone_id'] = $blood->id;
+            $already = BloodEntry::where('phone_id', $blood->id)->where('parent_user_id', $user->id)->first();
+            if (isset($already)) {
+                $already->fill($data2)->save();
+            } else {
+                BloodEntry::create($data2);
+            }
+        } else {
+
+            $data2['parent_user_id'] = $user->id;
+            $blood = Blood::create($data1);
+            $data2['phone_id'] = $blood->id;
+
+            if ($blood) {
+
+                BloodEntry::create($data2);
+            }
+
+        }
+
+        $request['roles_id'] = 2;
+        $user_input['password'] = bcrypt($request->phone);
+        $user_input['phone'] =  $request->phone;
+        $user_input['name'] = $request->name;
+
+        $created_user = User::create($user_input);
+
+        $created_user->roles()->attach($request['roles_id']);
+
+        $detail['user_id'] =$created_user->id;
+        $detail['primary_address'] = "pokhara";
+        $detail['secondary_address'] = "pokhara";
+        $detail['donate'] = 1;
+        $detail['blood_group'] = $request->blood;
+
+        UserDetail::create($detail);
+        
+        return redirect()->back()->with('status','Successfull phone:'. $created_user);
     }
 
     /**

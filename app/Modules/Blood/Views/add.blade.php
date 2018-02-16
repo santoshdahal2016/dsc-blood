@@ -42,12 +42,30 @@
                                 <div class="help-info">*Required</div></div>
                         </div>
 
-                        <label for="inputEmail3"   >Email</label>
+                        <label for="inputEmail3"   >Phone</label>
 
                         <div class="form-group">
                             <div class="form-line">
                                 {!! Form::text('phone', null, ['placeholder'=>'phone','required'=>'required','class'=>'form-control']) !!}
                                 <div class="help-info">*Required</div> </div>
+                        </div>
+
+
+                        <div class="form-group ">
+                            <div class="select-style">
+                                <select class="form-control" name="blood" required>
+                                    <option value="">Select Blood Group</option>
+                                    <option value="A+">A+</option>
+                                    <option value="B+">B+</option>
+                                    <option value="O+">O+</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B-">B-</option>
+                                    <option value="O-">O-</option>
+                                    <option value="AB-">AB-</option>
+                                    <option value="UNKNOWN">UNKNOWN</option>
+                                </select>
+                            </div>
                         </div>
 
                         {!! Form::submit('Upload',['class'=>'btn btn-primary']) !!}
