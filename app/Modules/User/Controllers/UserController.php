@@ -95,7 +95,7 @@ class UserController extends Controller
     public function store(Request $request)
     {
 
-        dd($request->all());
+//        dd($request->all());
         $user = Auth::user();
 
 
@@ -110,7 +110,7 @@ class UserController extends Controller
             $user_input = $request->all();
             $user_input['password'] = bcrypt($user_input['password']);
 
-            
+
             $created_user = User::create($user_input);
             $created_user->roles()->attach($request['roles_id']);
 

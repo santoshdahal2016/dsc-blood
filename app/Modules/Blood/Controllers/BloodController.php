@@ -122,7 +122,7 @@ class BloodController extends Controller
         $user = Auth::user();
         $this->validate($request, [
             'name' => 'required|max:255',
-            'phone' => 'required|max:10',
+            'phone' => 'required|max:10|min:10',
             'blood' => 'required|max:7',
         ]);
         $data1['name'] = $request->name;

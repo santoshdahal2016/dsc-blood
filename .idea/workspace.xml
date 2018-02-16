@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="973ac591-baf6-4fa5-979b-325530daa24a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php" afterPath="$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php" />
       <change beforePath="$PROJECT_DIR$/app/Modules/User/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Modules/User/Controllers/UserController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,21 +27,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BloodController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BloodController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="118">
+              <caret line="124" column="46" lean-forward="false" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Modules/User/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="112" column="12" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
+            <state relative-caret-position="1476">
+              <caret line="97" column="25" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticatesUsers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,16 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Blood/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -163,10 +173,10 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/IssueTokenTrait.php" />
         <option value="$PROJECT_DIR$/app/Modules/Blood/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Modules/Blood/Views/add.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ApiRegisterController.php" />
         <option value="$PROJECT_DIR$/app/Modules/User/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php" />
       </list>
     </option>
   </component>
@@ -232,6 +242,14 @@
               <item name="bloodincloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="bloodincloud" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="bloodincloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bloodincloud" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -240,6 +258,21 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Apisettings" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="bloodincloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bloodincloud" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Blood" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="bloodincloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bloodincloud" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Blood" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="bloodincloud" type="b2602c69:ProjectViewProjectNode" />
@@ -351,12 +384,12 @@
       <workItem from="1516045331382" duration="1591000" />
       <workItem from="1516094869084" duration="163000" />
       <workItem from="1518757076920" duration="4002000" />
-      <workItem from="1518761856427" duration="1080000" />
+      <workItem from="1518761856427" duration="1851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69343000" />
+    <option name="totallyTimeSpent" value="70114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="27" width="1366" height="741" extended-state="6" />
@@ -394,20 +427,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1532">
-          <caret line="99" column="7" lean-forward="true" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="61" lean-forward="true" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/User/Views/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
@@ -738,14 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -770,10 +781,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/User/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="112" column="12" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
+        <state relative-caret-position="1476">
+          <caret line="97" column="25" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="124" column="46" lean-forward="false" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
           <folding />
         </state>
       </provider>
