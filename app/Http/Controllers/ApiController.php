@@ -85,6 +85,8 @@ class ApiController extends Controller
                 } else {
                     BloodEntry::create($data2);
                 }
+                $response =   ['status'=>"success", 'name'=>$blood->name , 'phone'=>$blood->phone,'blood'=>$request->blood];
+                return response()->json($response);
             } else {
 
                 $data2['parent_user_id'] = $user->id;
