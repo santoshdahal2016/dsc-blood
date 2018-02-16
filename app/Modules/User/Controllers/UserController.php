@@ -94,6 +94,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request->all());
         $user = Auth::user();
 
         if($user->hasRole('admin')|| $user->can('user_store')) {
