@@ -576,8 +576,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <img style="padding-top: 30px" class="d-block mx-auto img-fluid"
-                                         src="{{'/images/phone.png'}}"></div>
+                                  <img style="padding-top: 30px" class="d-block mx-auto img-fluid"
+                                                                                                                           src="{{'/images/phone.png'}}"></div>
                                 <div class="col-md-7 align-self-baseline" style="padding-top: 10%">
                                     <form class="w-100 border border-danger my-5" method="get" action="{{url('/search')}}">
                                         {{ csrf_field() }}
@@ -605,8 +605,8 @@
                                     </form>
                                 </div>
                                 <br><br>
-                                <div class="col-md-5" style="padding-top: 20px"><img src="{{url('/images/play.png')}}"/>
-                                </div>
+                                <div class="col-md-5" style="padding-top: 20px"> <a href="https://play.google.com/store/apps/details?id=ga.eblood.bloodinemergency" ><img src="{{url('/images/play.png')}}"/>
+                                    </a>   </div>
                             </div>
                         </div>
                     </div>
