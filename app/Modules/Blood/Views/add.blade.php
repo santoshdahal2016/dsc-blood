@@ -26,6 +26,9 @@
     <div class="row clearfix">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
+                @if(Session::has('message'))
+                    <div class="alert alert-success"><span class="glyphicon glyphicon-ok"></span><em> {!! session('message') !!}</em></div>
+                @endif
                 <div class="header">
                     <h3 class="box-title">Add Data</h3>
 
@@ -63,7 +66,7 @@
 
                         <div class="form-group">
                             <div class="form-line">
-                                {!! Form::text('date_of_birth', null, ['placeholder'=>'2053-09-23','required'=>'required','class'=>'form-control']) !!}
+                                {!! Form::text('date_of_birth', null, ['placeholder'=>'2053-09-23','id'=>'nepaliDate5','required'=>'required','class'=>'form-control']) !!}
                                 <div class="help-info">*Required</div> </div>
                         </div>
 
@@ -97,7 +100,18 @@
 @endsection
 
 @section('scripts')
+    <script type="text/javascript" src="http://sajanmaharjan.com.np/nepali.datepicker/nepali.datepicker.v2.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://sajanmaharjan.com.np/nepali.datepicker/nepali.datepicker.v2.2.min.css" />
+<script>
+    $(document).ready(function(){
+        $('#nepaliDate5').nepaliDatePicker({
+            npdMonth: true,
+            npdYear: true,
+            npdYearCount: 100
+        });
+    });
 
+</script>
 @endsection
 
 

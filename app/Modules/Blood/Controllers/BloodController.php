@@ -174,7 +174,7 @@ class BloodController extends Controller
 
         UserDetail::create($detail);
         
-        return redirect()->back()->with('status','Successfull phone:'. $created_user);
+        return redirect()->back()->with('message','Successfull phone:'. $created_user);
     }
 
     /**
