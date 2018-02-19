@@ -21,7 +21,7 @@ class UserDetail extends Model
      *
      * @var array
      */
-    protected $fillable = ['user_id', 'primary_address', 'secondary_address','blood_group','donate','image','register_ip_address','last_ip_address','register_lat_address','register_lon_address'];
+    protected $fillable = ['user_id', 'primary_address', 'secondary_address','blood_group','donate','image','weight','date_of_birth','register_ip_address','last_ip_address','register_lat_address','register_lon_address'];
 
 
 

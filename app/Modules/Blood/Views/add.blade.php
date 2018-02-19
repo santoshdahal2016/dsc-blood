@@ -27,7 +27,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header">
-                    <h3 class="box-title">Import Blood From File</h3>
+                    <h3 class="box-title">Add Data</h3>
 
                 </div>
                 <div class="body">
@@ -47,6 +47,23 @@
                         <div class="form-group">
                             <div class="form-line">
                                 {!! Form::text('phone', null, ['placeholder'=>'phone','required'=>'required','class'=>'form-control']) !!}
+                                <div class="help-info">*Required</div> </div>
+                        </div>
+
+                        <label for="inputEmail3"   >Weight</label>
+
+                        <div class="form-group">
+                            <div class="form-line">
+                                {!! Form::text('weight', null, ['placeholder'=>'weight in kg','required'=>'required','class'=>'form-control']) !!}
+                                <div class="help-info">*Required</div> </div>
+                        </div>
+
+
+                        <label for="inputEmail3"   >Date of Birth</label>
+
+                        <div class="form-group">
+                            <div class="form-line">
+                                {!! Form::text('date_of_birth', null, ['placeholder'=>'2053-09-23','required'=>'required','class'=>'form-control']) !!}
                                 <div class="help-info">*Required</div> </div>
                         </div>
 
