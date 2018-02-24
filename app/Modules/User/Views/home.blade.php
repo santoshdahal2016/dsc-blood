@@ -1753,7 +1753,7 @@
                                                     </p>
 
                                                     <i class="fa fa-location-arrow fa-contact"></i>
-                                                    <p>Western Region campus<br>Pokhara, Nepal</p>
+                                                    <p>IOE Paschimanchal Campus<br>Pokhara, Nepal</p>
 
                                                     {{--<i class="fa fa-phone fa-contact"></i>--}}
                                                     {{--<p>Office:&nbsp; (+880) 0823 560 433<br>Cell:&nbsp; (+880) 0723 161--}}
