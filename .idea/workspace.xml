@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="973ac591-baf6-4fa5-979b-325530daa24a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php" afterPath="$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Blood/Views/add.blade.php" afterPath="$PROJECT_DIR$/app/Modules/Blood/Views/add.blade.php" />
-    </list>
+    <list default="true" id="973ac591-baf6-4fa5-979b-325530daa24a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="431">
-              <caret line="176" column="85" lean-forward="true" selection-start-line="176" selection-start-column="85" selection-end-line="176" selection-end-column="85" />
+              <caret line="176" column="85" lean-forward="false" selection-start-line="176" selection-start-column="85" selection-end-line="176" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -370,12 +367,12 @@
       <workItem from="1518773464563" duration="1456000" />
       <workItem from="1518778699883" duration="639000" />
       <workItem from="1518875671962" duration="60000" />
-      <workItem from="1519050475206" duration="3584000" />
+      <workItem from="1519050475206" duration="4256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75853000" />
+    <option name="totallyTimeSpent" value="76525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="27" width="1366" height="741" extended-state="6" />
@@ -795,7 +792,7 @@
     <entry file="file://$PROJECT_DIR$/app/Modules/Blood/Controllers/BloodController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
-          <caret line="176" column="85" lean-forward="true" selection-start-line="176" selection-start-column="85" selection-end-line="176" selection-end-column="85" />
+          <caret line="176" column="85" lean-forward="false" selection-start-line="176" selection-start-column="85" selection-end-line="176" selection-end-column="85" />
           <folding />
         </state>
       </provider>
