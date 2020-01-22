@@ -19,7 +19,7 @@ class ApiLoginController extends Controller{
     use IssueTokenTrait;
     private $client;
     public function __construct(){
-        $this->client = Client::find(6);
+        $this->client = Client::find(2);
     }
     public function login(Request $request){
 
