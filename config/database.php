@@ -39,13 +39,14 @@ return [
             'prefix' => '',
         ],
 
+
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'bloodincloudsql.mysql.database.azure.com'),
+            'host' => env('DB_HOST', 'inventionnepal.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'bloodincloud'),
-            'username' => env('DB_USERNAME', 'santosh@bloodincloudsql'),
-            'password' => env('DB_PASSWORD', 'Bl00dincl0ud'),
+            'database' => env('DB_DATABASE', 'inventio_eblood'),
+            'username' => env('DB_USERNAME', 'inventio_eblood'),
+            'password' => env('DB_PASSWORD', 'ebl00d_phpmyadmin'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
