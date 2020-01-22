@@ -53,6 +53,16 @@
                                 <input type="email"required='required'  class="form-control" name="email" id="inputEmail3" placeholder="Email" value="{{ old('email') }}">
                                 <div class="help-info">*Required</div> </div>
                         </div>
+
+
+                                                    <label for="inputEmail3"  >Phone Number</label>
+
+                            <div class="form-group">
+                            <div class="form-line">
+                                <input type="text"required='required'  class="form-control" name="phone" id="idphone3" placeholder="Phone" value="{{ old('phone') }}">
+                                <div class="help-info">*Required</div> </div>
+                        </div>
+                    
                     
                             <label for="inputPassword3"  >Password</label>
 
