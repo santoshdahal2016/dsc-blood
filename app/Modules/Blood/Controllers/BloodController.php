@@ -70,13 +70,14 @@ class BloodController extends Controller
                     $validator = Validator::make($data1, [
                         'name' => 'required|max:255',
                         'phone' => 'required|max:10',
-                        'blood_group' => 'required|max:7',
+                        'blood_group' => 'in:A+,A-,B+,B-,AB+,AB-,O+,O-,UNKNOWN',
                     ]);
 
 //                    dd($validator);
                     if ($validator->fails()) {
                         ++$error_data;
                         continue;
+
                     }
                     $blood = Blood::where('phone', $value->phone)->first();
 
