@@ -14,6 +14,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Laravel\Passport\Client;
 
+
+use App\Modules\Blood\Models\Blood;
+use App\Modules\Blood\Models\BloodEntry;
+
+
 class ApiRegisterController extends controller
 {
     use IssueTokenTrait;
@@ -44,7 +49,13 @@ class ApiRegisterController extends controller
         $detail['user_id'] =$created_user->id;
         $detail['primary_address'] = $request->primary;
         $detail['secondary_address'] = $request->secondary;
-        $detail['donate'] = $request->help===true?1:0;
+        if($request->help == true){
+                    $detail['donate'] = 1;
+
+        }else{
+                    $detail['donate'] = 0;
+
+        }
         $detail['blood_group'] = $request->blood;
 
         UserDetail::create($detail);
