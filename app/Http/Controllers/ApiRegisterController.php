@@ -108,11 +108,14 @@ class ApiRegisterController extends controller
             }
 
         }
+        $request1 = new \Illuminate\Http\Request();
 
-        $request->username = $request->phone;
-        error_log( print_r($request->all(), TRUE));
+        $request1->replace(['username' => $request->phone]);
+        $request1->replace(['password' => $request->password]);
+
+        error_log( print_r($request1->all(), TRUE));
 
 
-        return $this->issueToken($request, 'password');
+        return $this->issueToken($request1, 'password');
     }
 }
