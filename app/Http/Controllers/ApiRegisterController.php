@@ -37,12 +37,11 @@ class ApiRegisterController extends controller
             'password' => 'required|min:4',
         ]);
 
-        $token['username'] = $request->phone;
-        $token['password'] = $request->password;
+        $token->username = $request->phone;
+        $token->password = $request->password;
 
 
         $request['name'] = $request->username;
-        $request['password'] = $request->password;
 
         $request['roles_id'] = 2;
         $user_input = $request->all();
