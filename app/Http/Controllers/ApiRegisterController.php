@@ -56,14 +56,32 @@ class ApiRegisterController extends controller
                     $detail['donate'] = 0;
 
         }
-        $detail['blood_group'] = $request->blood;
+             if($request->blood == 'o+'){
+                   $detail['blood_group'] =  'O+';
+
+        }elseif($request->blood == 'o-'){
+                   $detail['blood_group'] =  'O-';
+        }else{
+                    $detail['blood_group'] = $request->blood;
+
+        }
 
         UserDetail::create($detail);
 
         $data1['name'] = $request->username;
         $data1['phone'] = $request->phone;
-        $data2['blood_group'] = $request->blood;
-        $data1['blood_group'] = $request->blood;
+
+        if($request->blood == 'o+'){
+            $data2['blood_group'] = 'O+';
+            $data1['blood_group'] = 'O+';
+        }elseif($request->blood == 'o-'){
+            $data2['blood_group'] = 'O-';
+            $data1['blood_group'] = 'O-';
+        }else{
+            $data2['blood_group'] = $request->blood;
+            $data1['blood_group'] = $request->blood;
+        }
+     
         $data2['parent_user_id'] = $created_user->id;
         $blood = Blood::where('phone', $request->phone)->first();
 
