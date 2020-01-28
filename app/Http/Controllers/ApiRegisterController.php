@@ -36,6 +36,11 @@ class ApiRegisterController extends controller
             'phone' => 'required|max:10|min:10',
             'password' => 'required|min:4',
         ]);
+
+        $token['username'] = $request->phone;
+        $token['password'] = $request->password;
+
+
         $request['name'] = $request->username;
         $request['password'] = $request->password;
 
@@ -107,8 +112,10 @@ class ApiRegisterController extends controller
 
         }
 
-        $request['username'] = $request['phone'];
-
-        return $this->issueToken($request, 'password');
+      $this->validate($token, [
+            'username' => 'required',
+            'password' => 'required'
+        ]);
+        return $this->issueToken($token, 'password');
     }
 }
