@@ -109,7 +109,7 @@ class ApiRegisterController extends controller
 
         }
         $request1 = new \Illuminate\Http\Request();
-
+$request1->setMethod('POST');
         $request1->request->add(['username' => $request->phone]);
         $request1->request->add(['password' => $request->password]);
 
