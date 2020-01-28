@@ -118,6 +118,9 @@ class ApiRegisterController extends controller
             'password' => 'required'
         ]);
 
+        error_log($request1->username);
+        error_log($request1->password);
+
 
         return $this->issueToken($request1, 'password');
     }
