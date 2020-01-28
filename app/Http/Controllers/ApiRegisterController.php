@@ -109,11 +109,14 @@ class ApiRegisterController extends controller
 
         }
         $request1 = new \Illuminate\Http\Request();
-$request1->setMethod('POST');
+        $request1->setMethod('POST');
         $request1->request->add(['username' => $request->phone]);
         $request1->request->add(['password' => $request->password]);
 
-        error_log( print_r($request1->all(), TRUE));
+        $this->validate($request1, [
+            'username' => 'required',
+            'password' => 'required'
+        ]);
 
 
         return $this->issueToken($request1, 'password');
