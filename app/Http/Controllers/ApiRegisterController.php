@@ -77,7 +77,7 @@ class ApiRegisterController extends controller
             }
         } else {
 
-            $data2['parent_user_id'] = $created_user>id;
+            $data2['parent_user_id'] = $created_user->id;
             $blood = Blood::create($data1);
             $data2['phone_id'] = $blood->id;
 
