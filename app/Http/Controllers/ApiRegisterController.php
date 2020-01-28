@@ -108,6 +108,8 @@ class ApiRegisterController extends controller
             }
 
         }
+
+        $request->username = $request->phone;
         error_log( print_r($request->all(), TRUE));
 
 
