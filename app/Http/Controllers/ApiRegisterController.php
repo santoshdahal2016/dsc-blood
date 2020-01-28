@@ -109,6 +109,8 @@ class ApiRegisterController extends controller
 
         }
 
+        return $request->all();
+
 
         return $this->issueToken($request, 'password');
     }
