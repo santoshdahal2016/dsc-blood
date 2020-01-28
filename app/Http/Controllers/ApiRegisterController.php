@@ -28,6 +28,7 @@ class ApiRegisterController extends controller
         $this->validate($request, [
             'username' => 'required|min:3',
             'email' => 'required|email|unique:users',
+            'phone' => 'required|max:10|min:10',
             'password' => 'required|min:4',
         ]);
         $request['name'] = $request->username;
@@ -48,6 +49,33 @@ class ApiRegisterController extends controller
 
         UserDetail::create($detail);
 
+        $data1['name'] = $request->username;
+        $data1['phone'] = $request->phone;
+        $data2['blood_group'] = $request->blood;
+        $data1['blood_group'] = $request->blood;
+        $data2['parent_user_id'] = $created_user->id;
+        $blood = Blood::where('phone', $request->phone)->first();
+
+        if (isset($blood)) {
+            $data2['phone_id'] = $blood->id;
+            $already = BloodEntry::where('phone_id', $blood->id)->where('parent_user_id', $created_user->id)->first();
+            if (isset($already)) {
+                $already->fill($data2)->save();
+            } else {
+                BloodEntry::create($data2);
+            }
+        } else {
+
+            $data2['parent_user_id'] = $created_user>id;
+            $blood = Blood::create($data1);
+            $data2['phone_id'] = $blood->id;
+
+            if ($blood) {
+
+                BloodEntry::create($data2);
+            }
+
+        }
 
         return $this->issueToken($request, 'password');
     }
