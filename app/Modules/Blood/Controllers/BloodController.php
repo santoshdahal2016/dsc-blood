@@ -59,6 +59,8 @@ class BloodController extends Controller
 //            dd($data);
             if ($data->count()) {
                 foreach ($data as $key => $value) {
+
+
                     $data1['name'] = $value->name;
                     $data1['phone'] = $value->phone;
                     $data2['blood_group'] = $value->blood_group;
@@ -68,8 +70,7 @@ class BloodController extends Controller
 
 //                    dd($value);
                     $validator = Validator::make($data1, [
-                        'name' => 'required|max:255',
-                        'phone' => 'required|max:10',
+                        'phone' => 'required|digits_between:10,10|numeric' ,
                         'blood_group' => 'in:A+,A-,B+,B-,AB+,AB-,O+,O-,UNKNOWN',
                     ]);
 
