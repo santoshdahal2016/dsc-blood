@@ -108,7 +108,7 @@ class ApiRegisterController extends controller
             }
 
         }
-        Log::info($request->all());
+        error_log( print_r($request->all(), TRUE));
 
 
         return $this->issueToken($request, 'password');
