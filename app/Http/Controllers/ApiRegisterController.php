@@ -109,8 +109,6 @@ class ApiRegisterController extends controller
 
         }
 
-         $request->username = $request->phone;
-                        dd($request);
 
         return $this->issueToken($request, 'password');
     }
