@@ -168,7 +168,6 @@ class BloodController extends Controller
         $detail['user_id'] =$created_user->id;
         $detail['primary_address'] = "pokhara";
         $detail['secondary_address'] = "pokhara";
-        $detail['donate'] = 1;
         $detail['blood_group'] = $request->blood;
         $detail['weight'] = $request->weight;
         $detail['date_of_birth'] = $request->date_of_birth;
