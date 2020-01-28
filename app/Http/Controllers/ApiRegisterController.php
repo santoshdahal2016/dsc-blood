@@ -108,6 +108,27 @@ class ApiRegisterController extends controller
             }
 
         }
+
+
+
+
+
+        $tokenResult = $created_user->createToken('Personal Access Token');
+        $token = $tokenResult->token;
+
+//        if ($request->remember_me)
+        $token->expires_at = Carbon::now()->addWeeks(10);
+
+        $token->save();
+
+        return response()->json([
+            'id' => $created_user->id,
+            'access_token' => $tokenResult->accessToken,
+            'token_type' => 'Bearer',
+            'expires_at' => $tokenResult->token->expires_at
+
+        ]);
+
         $request1 = new \Illuminate\Http\Request();
         $request1->setMethod('POST');
         $request1->request->add(['username' => $request->phone]);
