@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 trait IssueTokenTrait{
     public function issueToken(Request $request, $grantType, $scope = ""){
 
-        dd($request);
         $params = [
             'grant_type' => $grantType,
             'client_id' => $this->client->id,
@@ -26,7 +25,11 @@ trait IssueTokenTrait{
             $params['username'] = $request->email ?: $request->username;
         }
         $request->request->add($params);
+
+
         $proxy = Request::create('oauth/token', 'POST');
+
+
         return Route::dispatch($proxy);
     }
 }
