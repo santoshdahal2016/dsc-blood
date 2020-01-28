@@ -44,7 +44,7 @@ class ApiRegisterController extends controller
         $detail['user_id'] =$created_user->id;
         $detail['primary_address'] = $request->primary;
         $detail['secondary_address'] = $request->secondary;
-        $detail['donate'] = $request->help;
+        $detail['donate'] = $request->help===true?1:0;
         $detail['blood_group'] = $request->blood;
 
         UserDetail::create($detail);
