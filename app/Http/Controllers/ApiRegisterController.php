@@ -110,8 +110,8 @@ class ApiRegisterController extends controller
         }
         $request1 = new \Illuminate\Http\Request();
 
-        $request1->replace(['username' => $request->phone]);
-        $request1->replace(['password' => $request->password]);
+        $request1->add(['username' => $request->phone]);
+        $request1->add(['password' => $request->password]);
 
         error_log( print_r($request1->all(), TRUE));
 
