@@ -37,7 +37,7 @@ class ApiRegisterController extends controller
             'password' => 'required|min:4',
         ]);
         $request['name'] = $request->username;
-        $request['password'] = $request->password_hash(string, PASSWORD_DEFAULT);
+        $request['password'] = $request->password;
 
         $request['roles_id'] = 2;
         $user_input = $request->all();
