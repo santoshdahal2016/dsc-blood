@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 
 trait IssueTokenTrait{
     public function issueToken(Request $request, $grantType, $scope = ""){
+
+        dd($request);
         $params = [
             'grant_type' => $grantType,
             'client_id' => $this->client->id,
